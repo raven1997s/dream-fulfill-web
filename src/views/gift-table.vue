@@ -176,7 +176,7 @@ const pageTotal = ref(0);
 const getData = () => {
 	getGiftList(query).then(res => {
 		tableData.value = res.data.list;
-		pageTotal.value = res.data.total || 50;
+		pageTotal.value = res.data.total ;
 	})
 };
 
@@ -322,7 +322,7 @@ const formRef = ref<FormInstance>()
 const checkGiftName = (rule: any, value: any, callback: any) => {
 	if (value === '') {
 		return callback(new Error('给宝贝给个名字呗'));
-	} else if (value.length > 10) {
+	} else if (value.length > 20) {
 		return callback(new Error('礼物名称太长了吧'));
 	} else {
 		callback();

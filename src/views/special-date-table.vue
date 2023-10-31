@@ -155,7 +155,7 @@ const pageTotal = ref(0);
 const getData = () => {
 	getSpecialDateList(query).then(res => {
 		tableData.value = res.data.list;
-		pageTotal.value = res.data.total || 50;
+		pageTotal.value = res.data.total ;
 	})
 };
 
@@ -303,7 +303,7 @@ const formRef = ref<FormInstance>()
 const checkHolidayName = (rule: any, value: any, callback: any) => {
 	if (value === '') {
 		return callback(new Error('给节日给个名字呗'));
-	} else if (value.length > 10) {
+	} else if (value.length > 30) {
 		return callback(new Error('节日名称太长了吧'));
 	} else {
 		callback();

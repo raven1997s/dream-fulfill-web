@@ -121,7 +121,7 @@ const pageTotal = ref(0);
 const getData = () => {
 	getUserList(query).then(res => {
 		tableData.value = res.data.list;
-		pageTotal.value = res.data.total || 50;
+		pageTotal.value = res.data.total ;
 	})
 };
 

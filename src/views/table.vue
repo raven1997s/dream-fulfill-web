@@ -110,7 +110,7 @@ const pageTotal = ref(0);
 const getData = () => {
 	fetchData().then(res => {
 		tableData.value = res.data.list;
-		pageTotal.value = res.data.pageTotal || 50;
+		pageTotal.value = res.data.pageTotal ;
 	});
 };
 getData();

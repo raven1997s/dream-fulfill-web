@@ -90,13 +90,13 @@ const items = [
     {
         icon: 'Tickets',
         index: '/activity-stat-table',
-        title: '活动奖品统计列表',
+        title: '活动奖品中奖概率统计',
         permiss: '5',
     },
     {
         icon: 'MagicStick',
         index: '/draw-record-table',
-        title: '中奖记录列表',
+        title: '中奖记录',
         permiss: '6',
     },
 

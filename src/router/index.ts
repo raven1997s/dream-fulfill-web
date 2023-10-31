@@ -61,7 +61,7 @@ const routes: RouteRecordRaw[] = [
                 path: '/activity-stat-table',
                 name: 'activitystattable',
                 meta: {
-                    title: '活动奖品统计列表',
+                    title: '活动奖品中奖概率统计',
                     permiss: '2',
                 },
                 component: () => import(/* webpackChunkName: "activity-stat-table" */ '../views/activity-stat-table.vue'),
@@ -70,7 +70,7 @@ const routes: RouteRecordRaw[] = [
                 path: '/draw-record-table',
                 name: 'drawrecordtable',
                 meta: {
-                    title: '中奖记录列表',
+                    title: '中奖记录',
                     permiss: '2',
                 },
                 component: () => import(/* webpackChunkName: "draw-record-table" */ '../views/draw-record-table.vue'),

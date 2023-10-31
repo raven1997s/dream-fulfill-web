@@ -149,7 +149,7 @@ const activityTime = ref<[Date, Date] | null>([
 const getData = () => {
 	getActivityList(query).then(res => {
 		tableData.value = res.data.list;
-		pageTotal.value = res.data.total || 50;
+		pageTotal.value = res.data.total;
 	})
 };
 
@@ -322,7 +322,7 @@ const formRef = ref<FormInstance>()
 const checkTheme = (rule: any, value: any, callback: any) => {
 	if (value === '') {
 		return callback(new Error('给活动起个主题呗'));
-	} else if (value.length > 10) {
+	} else if (value.length > 30) {
 		return callback(new Error('活动主题太长了吧'));
 	} else {
 		callback();

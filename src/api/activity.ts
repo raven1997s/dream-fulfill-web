@@ -38,3 +38,23 @@ export const deleteActivity =  async  (params:any) => {
   return result.data;
 }
 
+
+export const getActivityStatList =  async  (params:any) => {
+  const result = await request({
+    url: 'http://localhost:8080/activity/stat/pageQueryActivityStatList', 
+    method: 'post',
+    data: params
+  })
+
+  return result.data;
+}
+
+export const getDrawRecordStatList =  async  (params:any) => {
+  const result = await request({
+    url: 'http://localhost:8080/drawRecord/pageQueryDrawRecordList', 
+    method: 'post',
+    data: params
+  })
+
+  return result.data;
+}
