@@ -99,6 +99,12 @@ const items = [
         title: '中奖记录',
         permiss: '6',
     },
+    {
+        icon: 'MagicStick',
+        index: '/doLottery',
+        title: '抽奖',
+        permiss: '6',
+    },
 
 ]
 // const items = [

@@ -442,4 +442,23 @@ onMounted(() => {
 	font-size: 14px;
 	margin-bottom: 20px;
 }
+
+
+.active-activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity-card {
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.prizes-list {
+  width: 60%;
+  padding: 20px;
+}
+
 </style>

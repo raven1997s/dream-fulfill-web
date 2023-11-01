@@ -76,6 +76,15 @@ const routes: RouteRecordRaw[] = [
                 component: () => import(/* webpackChunkName: "draw-record-table" */ '../views/draw-record-table.vue'),
             },
             {
+                path: '/doLottery',
+                name: 'doLottery',
+                meta: {
+                    title: '抽奖',
+                    permiss: '2',
+                },
+                component: () => import(/* webpackChunkName: "doLottery" */ '../views/doLottery.vue'),
+            },
+            {
                 path: '/icon',
                 name: 'icon',
                 meta: {

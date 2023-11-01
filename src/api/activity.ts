@@ -58,3 +58,32 @@ export const getDrawRecordStatList =  async  (params:any) => {
 
   return result.data;
 }
+export const selectActivityInfo =  async  (params:any) => {
+  const result = await request({
+    url: 'http://localhost:8080/activity/selectActivityInfo', 
+    method: 'post',
+    data: params
+  })
+
+  return result.data;
+}
+
+export const findCurrentActivityStatList =  async  (params:any) => {
+  const result = await request({
+    url: 'http://localhost:8080/activity/stat/findCurrentActivityStatList', 
+    method: 'post',
+    data: params
+  })
+
+  return result.data;
+}
+
+export const doLottery =  async  (params:any) => {
+  const result = await request({
+    url: 'http://localhost:8080/activity/doLottery', 
+    method: 'post',
+    data: params
+  })
+
+  return result.data;
+}
