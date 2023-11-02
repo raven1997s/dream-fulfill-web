@@ -19,7 +19,7 @@
                             </el-icon>
                             <span>{{ item.title }}</span>
                         </template>
-                        <template v-for="subItem in item.subs">
+                        <!-- <template v-for="subItem in item.subs">
                             <el-sub-menu
                                 v-if="subItem.subs"
                                 :index="subItem.index"
@@ -34,7 +34,7 @@
                             <el-menu-item v-else :index="subItem.index" v-permiss="item.permiss">
                                 {{ subItem.title }}
                             </el-menu-item>
-                        </template>
+                        </template> -->
                     </el-sub-menu>
                 </template>
                 <template v-else>
@@ -62,48 +62,56 @@ const items = [
         index: '/raven-home',
         title: '主页',
         permiss: '1',
+        subs: null
     },
     {
         icon: 'User',
         index: '/user-table',
         title: '用户列表',
         permiss: '1',
+        subs: null
     },
     {
         icon: 'Star',
         index: '/gift-table',
         title: '礼物列表',
         permiss: '2',
+        subs: null
     },
     {
         icon: 'Calendar',
         index: '/special-date-table',
         title: '节日列表',
         permiss: '3',
+        subs: null
     },
     {
         icon: 'Notebook',
         index: '/activity-table',
         title: '活动列表',
         permiss: '4',
+        subs: null
     },
     {
         icon: 'Tickets',
         index: '/activity-stat-table',
         title: '活动奖品中奖概率统计',
         permiss: '5',
+        subs: null
     },
     {
         icon: 'MagicStick',
         index: '/draw-record-table',
         title: '中奖记录',
         permiss: '6',
+        subs: null
     },
     {
         icon: 'MagicStick',
         index: '/doLottery',
         title: '抽奖',
-        permiss: '6',
+        permiss: '7',
+        subs: null
     },
 
 ]

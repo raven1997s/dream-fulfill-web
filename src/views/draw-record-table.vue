@@ -23,6 +23,7 @@
 <script setup lang="ts" name="usertable">
 import { ref, reactive, onMounted } from 'vue';
 import { getDrawRecordStatList } from '../api/activity';
+import { Delete, Edit, Search, Plus } from '@element-plus/icons-vue';
 
 interface TableItem {
 	id: number,
@@ -63,19 +64,6 @@ const handlePageChange = (val: number) => {
 };
 
 
-// 表格编辑时弹窗和保存
-const form = reactive({
-	id: 0,
-	createUser: 0,
-	selectedHoliday: undefined as Holiday | undefined,
-	holidayId: 0,
-	theme: "",
-	description: "",
-	rule: "",
-	startTime: "",
-	endTime: "",
-	activityTime: [new Date(), new Date()],
-});
 
 </script>
 

@@ -149,6 +149,7 @@ import { ElMessage, ElMessageBox } from 'element-plus';
 import { getGiftList, updateGift, addGift, deleteGift } from '../api/gift';
 import type { FormInstance, FormRules } from 'element-plus'
 import { useUserStore } from '../store/user-info';
+import { Delete, Edit, Search, Plus } from '@element-plus/icons-vue';
 
 const userStore = useUserStore();
 

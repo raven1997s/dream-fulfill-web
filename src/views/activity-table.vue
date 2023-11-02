@@ -116,6 +116,7 @@ import type { FormInstance, FormRules } from 'element-plus'
 import { useUserStore } from '../store/user-info';
 import { format, parseISO } from 'date-fns';
 import { getSpecialDateList } from '../api/special-date-table';
+import { Delete, Edit, Search, Plus } from '@element-plus/icons-vue';
 
 const userStore = useUserStore();
 

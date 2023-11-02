@@ -24,6 +24,7 @@
 <script setup lang="ts" name="usertable">
 import { ref, reactive, onMounted } from 'vue';
 import { getActivityStatList } from '../api/activity';
+import { Delete, Edit, Search, Plus } from '@element-plus/icons-vue';
 
 interface TableItem {
 	id: number,

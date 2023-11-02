@@ -1,25 +1,21 @@
 <template>
-  <div class="image-container">
-    <img :src="imagePath" alt="Home Screenshot" class="styled-image" />
+  <div class="image-container"> 
+    <img :src="imagePath" alt="Home Screenshot" class="styled-image"/>
   </div>
 </template>
 
-<script>
-import homeImage from '../assets/img/home.jpg';
+<script setup lang="ts" name="raven-home">
+import { ref } from 'vue'
+import homeImage from '../assets/img/home.jpg'
 
-export default {
-  data() {
-    return {
-      imagePath: homeImage,
-    };
-  },
-};
+const imagePath = ref(homeImage)
 </script>
+
 
 
 <style>
 .image-container {
-  background: url("assets/screenshots/home.jpg") center center no-repeat;  width: 100%;
+  background: url("assets/img/home.jpg") center center no-repeat;  width: 200%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
