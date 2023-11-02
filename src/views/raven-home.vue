@@ -6,7 +6,7 @@
 
 <script setup lang="ts" name="raven-home">
 import { ref } from 'vue'
-import homeImage from '../assets/img/home.jpg'
+import homeImage from '/src/assets/img/home.jpg'
 
 const imagePath = ref(homeImage)
 </script>
@@ -15,7 +15,7 @@ const imagePath = ref(homeImage)
 
 <style>
 .image-container {
-  background: url("assets/img/home.jpg") center center no-repeat;  width: 200%;
+  background: url("/src/assets/img/home.jpg") center center no-repeat;  width: 200%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

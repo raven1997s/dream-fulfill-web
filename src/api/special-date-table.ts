@@ -1,9 +1,9 @@
 import request from '../utils/request';
-
+import { baseUrl } from './common';
 
 export const getSpecialDateList =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/holiday/pageQuerySpecialDateList', 
+      url: baseUrl + '/holiday/pageQuerySpecialDateList', 
       method: 'post',
       data: params
     })
@@ -13,7 +13,7 @@ export const getSpecialDateList =  async  (params:any) => {
 
 export const updateSpecialDate =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/holiday/updateSpecialDate', 
+      url: baseUrl + '/holiday/updateSpecialDate', 
       method: 'post',
       data: params
     })
@@ -22,7 +22,7 @@ export const updateSpecialDate =  async  (params:any) => {
 
 export const addSpecialDate =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/holiday/addSpecialDate', 
+    url: baseUrl + '/holiday/addSpecialDate', 
     method: 'post',
     data: params
   })
@@ -31,7 +31,7 @@ export const addSpecialDate =  async  (params:any) => {
 
 export const deleteSpecialDate =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/holiday/deleteSpecialDate', 
+    url: baseUrl + '/holiday/deleteSpecialDate', 
     method: 'post',
     data: params
   })

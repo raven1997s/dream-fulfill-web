@@ -1,9 +1,9 @@
 import request from '../utils/request';
-
+import { baseUrl } from './common';
 
 export const getGiftList =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/gift/pageQueryGiftList', 
+      url: baseUrl + '/gift/pageQueryGiftList', 
       method: 'post',
       data: params
     })
@@ -13,7 +13,7 @@ export const getGiftList =  async  (params:any) => {
 
 export const updateGift =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/gift/updateGift', 
+      url: baseUrl + '/gift/updateGift', 
       method: 'post',
       data: params
     })
@@ -22,7 +22,7 @@ export const updateGift =  async  (params:any) => {
 
 export const addGift =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/gift/addGift', 
+    url: baseUrl + '/gift/addGift', 
     method: 'post',
     data: params
   })
@@ -31,7 +31,7 @@ export const addGift =  async  (params:any) => {
 
 export const deleteGift =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/gift/deleteGift', 
+    url: baseUrl + '/gift/deleteGift', 
     method: 'post',
     data: params
   })

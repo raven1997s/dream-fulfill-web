@@ -1,9 +1,10 @@
 import request from '../utils/request';
+import { baseUrl } from './common';
 
 
 export const getActivityList =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/activity/pageQueryActivityList', 
+      url:  baseUrl + '/activity/pageQueryActivityList', 
       method: 'post',
       data: params
     })
@@ -13,7 +14,7 @@ export const getActivityList =  async  (params:any) => {
 
 export const updateActivity =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/activity/updateActivity', 
+      url: baseUrl + '/activity/updateActivity', 
       method: 'post',
       data: params
     })
@@ -22,7 +23,7 @@ export const updateActivity =  async  (params:any) => {
 
 export const addActivity =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/activity/addActivity', 
+    url: baseUrl + '/activity/addActivity', 
     method: 'post',
     data: params
   })
@@ -31,7 +32,7 @@ export const addActivity =  async  (params:any) => {
 
 export const deleteActivity =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/activity/deleteActivity', 
+    url: baseUrl + '/activity/deleteActivity', 
     method: 'post',
     data: params
   })
@@ -41,7 +42,7 @@ export const deleteActivity =  async  (params:any) => {
 
 export const getActivityStatList =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/activity/stat/pageQueryActivityStatList', 
+    url: baseUrl + '/activity/stat/pageQueryActivityStatList', 
     method: 'post',
     data: params
   })
@@ -51,7 +52,7 @@ export const getActivityStatList =  async  (params:any) => {
 
 export const getDrawRecordStatList =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/drawRecord/pageQueryDrawRecordList', 
+    url: baseUrl + '/drawRecord/pageQueryDrawRecordList', 
     method: 'post',
     data: params
   })
@@ -60,7 +61,7 @@ export const getDrawRecordStatList =  async  (params:any) => {
 }
 export const selectActivityInfo =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/activity/selectActivityInfo', 
+    url: baseUrl + '/activity/selectActivityInfo', 
     method: 'post',
     data: params
   })
@@ -70,7 +71,7 @@ export const selectActivityInfo =  async  (params:any) => {
 
 export const findCurrentActivityStatList =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/activity/stat/findCurrentActivityStatList', 
+    url: baseUrl + '/activity/stat/findCurrentActivityStatList', 
     method: 'post',
     data: params
   })
@@ -80,7 +81,7 @@ export const findCurrentActivityStatList =  async  (params:any) => {
 
 export const doLottery =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/activity/doLottery', 
+    url: baseUrl + '/activity/doLottery', 
     method: 'post',
     data: params
   })

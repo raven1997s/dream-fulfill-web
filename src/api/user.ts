@@ -1,9 +1,9 @@
 import request from '../utils/request';
-
+import { baseUrl } from './common';
 
 export const getUserList =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/user/pageQueryUserList', 
+      url: baseUrl + '/user/pageQueryUserList', 
       method: 'post',
       data: params
     })
@@ -13,7 +13,7 @@ export const getUserList =  async  (params:any) => {
 
 export const updateUser =  async  (params:any) => {
     const result = await request({
-      url: 'http://localhost:8080/user/updateUser', 
+      url: baseUrl + '/user/updateUser', 
       method: 'post',
       data: params
     })
@@ -22,7 +22,7 @@ export const updateUser =  async  (params:any) => {
 
 export const addUser =  async  (params:any) => {
   const result = await request({
-    url: 'http://localhost:8080/user/addUser', 
+    url: baseUrl + '/user/addUser', 
     method: 'post',
     data: params
   })
