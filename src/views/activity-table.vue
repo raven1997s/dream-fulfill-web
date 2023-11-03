@@ -191,7 +191,7 @@ const form = reactive({
 	id: 0,
 	createUser: 0,
 	selectedHoliday: undefined as Holiday | undefined,
-	holidayId: 0,
+	holidayId: null as number | null,
 	theme: "",
 	description: "",
 	rule: "",
