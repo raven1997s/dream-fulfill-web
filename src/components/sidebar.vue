@@ -107,7 +107,7 @@ const items = [
         subs: null
     },
     {
-        icon: 'MagicStick',
+        icon: 'Present',
         index: '/doLottery',
         title: '抽奖',
         permiss: '7',
