@@ -1,7 +1,8 @@
 import axios, {AxiosInstance, AxiosError, AxiosResponse, AxiosRequestConfig} from 'axios';
 
 const service:AxiosInstance = axios.create({
-    timeout: 5000
+    timeout: 5000,
+    withCredentials: false
 });
 
 service.interceptors.request.use(
